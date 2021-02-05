@@ -68,11 +68,11 @@ def age_gender_detector(frame,loop):
         cv2.putText(frameFace, label, (bbox[0], bbox[1]-10), cv2.FONT_HERSHEY_SIMPLEX, 0.8, (0, 255, 255), 2, cv2.LINE_AA)
     return frameFace,age,boxes
 
-inputs = cv2.VideoCapture('Test vids/vid9.mp4')
+inputs = cv2.VideoCapture('test_vids/vid7.mp4')
 age_n=0
 alpha=[]
 age_n_list=[]
-limit_val=200
+limit_frame_val=200
 while True:
     ret,current_frame = inputs.read()
     loop+=1
@@ -85,7 +85,7 @@ while True:
             print('Frames passed : ',loop)
             break
         elif loop==limit_val and boxes<30: 
-            limit_val +=100
+            limit_val +=50
 
     cv2.imshow("Webcam Video",output)
     if cv2.waitKey(1) & 0xFF == ord('q'):
