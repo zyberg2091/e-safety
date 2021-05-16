@@ -26,13 +26,16 @@ import urllib
 from bs4 import BeautifulSoup
 from urllib.request import urlopen
 
-html=urlopen('https://house.porn/best')
+# Web Page data is fetched from example website mentioned below
+
+html=urlopen('https://house.porn/best')                             
 bs = BeautifulSoup(html, "html.parser")
 titles = bs.find_all(['h1'])
 captions=bs.find_all(['h2','h3','h4','h5','h6'])
 for t in titles:
   text1=t.get_text().strip()
 
+print(text1)
 print('\n')
 
 text2=[]
@@ -94,7 +97,7 @@ def predict():
     response['out2']=response['out2'].tolist()
 
   if response['input2'] is not None:
-    response['out3']=age_detector('age_detection_mod/test_vids/vid7.mp4')
+    response['out3']=age_detector('age_detection_mod/test_vids/vid7.mp4')  #video path is mentioned from the folder structure of local system
     
   return jsonify(response)
     
