@@ -76,7 +76,7 @@ capmodel.load_weights('adult_video_cap_detection/porn_detection.h5')
 
 
 @app.route("/predict",methods=["POST","GET"])
-def predict(text1,text2):
+def predict():
   n=np.random.randint(0,10)
   response={'input1': text1,'input2': text2[n]}
   if type(response['input1'])==np.str:
