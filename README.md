@@ -19,13 +19,13 @@
 ## Instructions to run on your local system
 
 * Pre-requisites:
-	- Lorem Ipsum
-    - Lorem Ipsum Dolor Sit Amet
+	- install packages mentioned in requirements.txt
+    - check the compatability of your local system with the packages.
 
 * Directions to execute
-    - Lorem Ipsum
-    - Dolor
-    - Sit Amet
+    - clone the repository
+    - Navigate to the repo using CLI
+    - run setup.py
 
 ---
 
