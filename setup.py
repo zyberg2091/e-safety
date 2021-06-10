@@ -28,23 +28,26 @@ from urllib.request import urlopen
 
 # Web Page data is fetched from example website mentioned below
 
-html=urlopen('https://house.porn/best')                             
+website_name=str(input())
+html=urlopen(website_name)                             
 bs = BeautifulSoup(html, "html.parser")
-titles = bs.find_all(['h1'])
+
+# check the tag params with web page of the website
+titles = bs.find_all(['h1'])  
 captions=bs.find_all(['h2','h3','h4','h5','h6'])
 for t in titles:
   text1=t.get_text().strip()
 
-print(text1)
-print('\n')
+# print(text1)
+# print('\n')
 
 text2=[]
 for t in captions:
   text2.append(t.get_text().strip())
-print(text2)
+# print(text2)
 
-
-
+rootdir,path=str(input('enter root dir')),str(input('enter the path'))
+Video_path=os.join(rootdir,path)
 
 
 app=Flask(__name__)
@@ -97,7 +100,7 @@ def predict():
     response['out2']=response['out2'].tolist()
 
   if response['input2'] is not None:
-    response['out3']=age_detector('age_detection_mod/test_vids/vid7.mp4')  #video path is mentioned from the folder structure of local system
+    response['out3']=age_detector(Video_path)  #video path is mentioned from the folder structure of local system
     
   return jsonify(response)
     
