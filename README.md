@@ -11,10 +11,12 @@
 </p>
 
 --- 
+<br>
 
-
-<h3 align="center">Built With</h3>
 <p align=center>
+    <img src = "sys arch flowchart.jpeg" >
+</p>
+<br>
 
 ## Instructions to run the architecture with Flask server on your local system
 
