@@ -40,7 +40,7 @@
 </table>
 
 #### Notes
-- A star to the repository would be massive boost to a NOOB like us.
+- A star to the repository would be massive boost to a NOOB me.
 
 
 <p align=center>
