@@ -16,16 +16,21 @@
 <h3 align="center">Built With</h3>
 <p align=center>
 
-## Instructions to run on your local system
+## Instructions to run the architecture with Flask server on your local system
 
 * Pre-requisites:
-	- install packages mentioned in requirements.txt
-    - check the compatability of your local system with the packages.
+   	- install packages mentioned in requirements.txt
+   	- check the compatability of your local system with the packages.
 
-* Directions to execute
-    - clone the repository
-    - Navigate to the repo using CLI
-    - run setup.py
+* Directions to execute:
+	- clone the repository 
+	- Navigate to the repo using CLI 
+	- run setup.py 
+
+
+## Fututre scope/Improvements
+	- Full stack web application with backend and frontend
+	- Age detection algorithm optimization
 
 ---
 
