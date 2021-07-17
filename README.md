@@ -14,6 +14,7 @@
 <br>
 
 <p align=center>
+System Architecture
     <img src = "sys arch flowchart.jpeg" >
 </p>
 <br>
@@ -31,7 +32,7 @@
 
 
 ## Fututre scope/Improvements
-	- Full stack web application with backend and frontend
+	- Full stack web application
 	- Age detection algorithm optimization
 
 ---
