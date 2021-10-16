@@ -13,6 +13,11 @@
 --- 
 <br>
 
+# Paper 
+
+Paper Link : [Smart System to Detect Adult Content and Child Pornography on Web](https://www.researchgate.net/publication/354934537_Smart_System_to_Detect_Adult_Content_and_Child_Pornography_on_Web)
+
+<br>
 <p align=center>
 System Architecture
     <img src = "sys arch flowchart.jpeg" >
